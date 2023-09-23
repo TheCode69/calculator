@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+      
+</head>
+<body>
+    <div id="container">
+        <h1>CALCULATOR</h1>
+        <input type="text" value="" id="output">
+        <div id="code">
+            <input type="button" value="AC" onclick="clearOutput()">
+            <input type="button" value="(" onclick="appendToOutput('(')">
+            <input type="button" value=")" onclick="appendToOutput(')')">
+        </div>
+        <div id="code">
+            <input type="button" value="9" onclick="c">
+            <input type="button" value="8" onclick="appendToOutput('8')">
+            <input type="button" value="7" onclick="appendToOutput('7')">
+        </div>
+        <div id="code">
+            <input type="button" value="6" onclick="appendToOutput('6')">
+            <input type="button" value="5" onclick="appendToOutput('5')">
+            <input type="button" value="4" onclick="appendToOutput('4')">
+        </div>
+        <div id="code">
+            <input type="button" value="3" onclick="appendToOutput('3')">
+            <input type="button" value="2" onclick="appendToOutput('2')">
+            <input type="button" value="1" onclick="appendToOutput('1')">
+        </div>
+        <div id="code">
+            <input type="button" value="0" onclick="appendToOutput('0')">
+            <input type="button" value="+" onclick="appendToOutput('+')">
+            <input type="button" value="-" onclick="appendToOutput('-')">
+        </div>
+        <div id="code">
+            <input type="button" value="*" onclick="appendToOutput('*')">
+            <input type="button" value="/" onclick="appendToOutput('/')">
+            <input type="button" value="=" onclick="calculate()">
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+
+</body>
+</html>
